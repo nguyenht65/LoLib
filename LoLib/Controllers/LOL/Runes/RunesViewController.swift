@@ -18,38 +18,33 @@ class RunesViewController: BaseViewController {
     private var viewModel: RunesViewModel
 
     private lazy var precisionView: RuneTypeView = {
-        let view = RuneTypeView(frame: runesStackView.bounds)
+        let rune = viewModel.runes.value[2]
+        let view = RuneTypeView(frame: runesStackView.bounds, rune: rune)
         view.backgroundImageView.image = UIImage(named: Image.RuneBackground.precision.rawValue)
-        view.setupUI(item: viewModel.runes.value[2])
-        view.setupData(rune: viewModel.runes.value[2])
         return view
     }()
     private lazy var dominationView: RuneTypeView = {
-        let view = RuneTypeView(frame: runesStackView.bounds)
+        let rune = viewModel.runes.value[0]
+        let view = RuneTypeView(frame: runesStackView.bounds, rune: rune)
         view.backgroundImageView.image = UIImage(named: Image.RuneBackground.domination.rawValue)
-        view.setupUI(item: viewModel.runes.value[0])
-        view.setupData(rune: viewModel.runes.value[0])
         return view
     }()
     private lazy var sorceryView: RuneTypeView = {
-        let view = RuneTypeView(frame: runesStackView.bounds)
+        let rune = viewModel.runes.value[4]
+        let view = RuneTypeView(frame: runesStackView.bounds, rune: rune)
         view.backgroundImageView.image = UIImage(named: Image.RuneBackground.sorcery.rawValue)
-        view.setupUI(item: viewModel.runes.value[4])
-        view.setupData(rune: viewModel.runes.value[4])
         return view
     }()
     private lazy var resolveView: RuneTypeView = {
-        let view = RuneTypeView(frame: runesStackView.bounds)
+        let rune = viewModel.runes.value[3]
+        let view = RuneTypeView(frame: runesStackView.bounds, rune: rune)
         view.backgroundImageView.image = UIImage(named: Image.RuneBackground.resolve.rawValue)
-        view.setupUI(item: viewModel.runes.value[3])
-        view.setupData(rune: viewModel.runes.value[3])
         return view
     }()
     private lazy var inspirationView: RuneTypeView = {
-        let view = RuneTypeView(frame: runesStackView.bounds)
+        let rune = viewModel.runes.value[1]
+        let view = RuneTypeView(frame: runesStackView.bounds, rune: rune)
         view.backgroundImageView.image = UIImage(named: Image.RuneBackground.inspiration.rawValue)
-        view.setupUI(item: viewModel.runes.value[1])
-        view.setupData(rune: viewModel.runes.value[1])
         return view
     }()
 
@@ -112,6 +107,7 @@ class RunesViewController: BaseViewController {
         default:
             return
         }
+        (view as? RuneTypeView)?.closeDetailView()
         runesStackView.addArrangedSubview(view)
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,14 +14,7 @@
                 <outlet property="nameBottomConstraint" destination="sVe-MW-9ba" id="GxC-2A-0J4"/>
                 <outlet property="nameLabel" destination="Nbd-Gu-Zt1" id="hdg-44-fem"/>
                 <outlet property="nameTopConstraint" destination="zJD-Dk-kFq" id="c6T-QU-wJt"/>
-                <outlet property="slot1StackView" destination="Abm-uG-WYf" id="Py4-y0-GkZ"/>
-                <outlet property="slot1View" destination="2Mi-bZ-Dii" id="SAE-bH-Fef"/>
-                <outlet property="slot2StackView" destination="sg5-CB-LC3" id="UMf-og-xJP"/>
-                <outlet property="slot2View" destination="b80-4f-F6n" id="SHw-C4-5Vn"/>
-                <outlet property="slot3StackView" destination="ytb-zO-hUK" id="X0t-SS-XYx"/>
-                <outlet property="slot3View" destination="smb-9f-deR" id="E1q-Y9-C9Y"/>
-                <outlet property="slot4StackView" destination="KyQ-oI-J3t" id="rsX-ex-swz"/>
-                <outlet property="slot4View" destination="ERu-Ji-9G1" id="Ryx-ZG-Abe"/>
+                <outlet property="runesStackView" destination="5vu-hh-MeQ" id="g4M-gk-Hg0"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -41,67 +34,30 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="es2-TJ-r1b" userLabel="Rune View">
                     <rect key="frame" x="0.0" y="184" width="414" height="412"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5vu-hh-MeQ">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="326"/>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-gm-XOC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="412"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Abm-uG-WYf" userLabel="Slot1">
-                                    <rect key="frame" x="179" y="0.0" width="56" height="56"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mi-bZ-Dii" customClass="EachRuneView" customModule="LoLib" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="56" id="UXs-PG-6Mi"/>
-                                                <constraint firstAttribute="width" secondItem="2Mi-bZ-Dii" secondAttribute="height" multiplier="1:1" id="baP-Vw-Z30"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sg5-CB-LC3" userLabel="Slot2">
-                                    <rect key="frame" x="182" y="96" width="50" height="50"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b80-4f-F6n" customClass="EachRuneView" customModule="LoLib" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="qx5-Re-eBP"/>
-                                                <constraint firstAttribute="width" secondItem="b80-4f-F6n" secondAttribute="height" multiplier="1:1" id="rYP-bP-7C9"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-zO-hUK" userLabel="Slot3">
-                                    <rect key="frame" x="182" y="186" width="50" height="50"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smb-9f-deR" customClass="EachRuneView" customModule="LoLib" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        </view>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KyQ-oI-J3t" userLabel="Slot4">
-                                    <rect key="frame" x="182" y="276" width="50" height="50"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERu-Ji-9G1" customClass="EachRuneView" customModule="LoLib" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        </view>
-                                    </subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="56" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5vu-hh-MeQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 </stackView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="Abm-uG-WYf" firstAttribute="centerX" secondItem="5vu-hh-MeQ" secondAttribute="centerX" id="B4I-Jj-duP"/>
-                                <constraint firstItem="ERu-Ji-9G1" firstAttribute="height" secondItem="smb-9f-deR" secondAttribute="height" id="JAH-Zr-yHj"/>
-                                <constraint firstItem="sg5-CB-LC3" firstAttribute="centerX" secondItem="5vu-hh-MeQ" secondAttribute="centerX" id="Knj-le-VCa"/>
-                                <constraint firstItem="ytb-zO-hUK" firstAttribute="centerX" secondItem="5vu-hh-MeQ" secondAttribute="centerX" id="cHB-0G-bOG"/>
-                                <constraint firstItem="smb-9f-deR" firstAttribute="width" secondItem="b80-4f-F6n" secondAttribute="width" id="n0d-PN-NSW"/>
-                                <constraint firstItem="KyQ-oI-J3t" firstAttribute="centerX" secondItem="5vu-hh-MeQ" secondAttribute="centerX" id="rAp-1V-jVK"/>
-                                <constraint firstItem="ERu-Ji-9G1" firstAttribute="width" secondItem="smb-9f-deR" secondAttribute="width" id="syp-Yx-Pjl"/>
-                                <constraint firstItem="smb-9f-deR" firstAttribute="height" secondItem="b80-4f-F6n" secondAttribute="height" id="vsO-lA-Rbl"/>
+                                <constraint firstItem="s4x-cK-6V2" firstAttribute="bottom" secondItem="5vu-hh-MeQ" secondAttribute="bottom" id="1CX-JE-lln"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5vu-hh-MeQ" secondAttribute="bottom" id="Kd1-hc-sGs"/>
+                                <constraint firstItem="5vu-hh-MeQ" firstAttribute="top" secondItem="s4x-cK-6V2" secondAttribute="top" id="OWh-H6-aoF"/>
+                                <constraint firstItem="5vu-hh-MeQ" firstAttribute="width" secondItem="WYd-mt-AGM" secondAttribute="width" id="QhA-jc-Gau"/>
+                                <constraint firstItem="5vu-hh-MeQ" firstAttribute="leading" secondItem="s4x-cK-6V2" secondAttribute="leading" id="gQs-n5-HP9"/>
+                                <constraint firstItem="s4x-cK-6V2" firstAttribute="trailing" secondItem="5vu-hh-MeQ" secondAttribute="trailing" id="oN4-CW-LYT"/>
                             </constraints>
-                        </stackView>
+                            <viewLayoutGuide key="contentLayoutGuide" id="s4x-cK-6V2"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="WYd-mt-AGM"/>
+                        </scrollView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="5vu-hh-MeQ" secondAttribute="trailing" id="R4H-hK-Flm"/>
-                        <constraint firstItem="5vu-hh-MeQ" firstAttribute="top" secondItem="es2-TJ-r1b" secondAttribute="top" id="UIX-P6-Vo3"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5vu-hh-MeQ" secondAttribute="bottom" id="mpy-HM-qza"/>
-                        <constraint firstItem="5vu-hh-MeQ" firstAttribute="leading" secondItem="es2-TJ-r1b" secondAttribute="leading" id="nav-Eh-nct"/>
+                        <constraint firstItem="dxG-gm-XOC" firstAttribute="top" secondItem="es2-TJ-r1b" secondAttribute="top" id="F6d-aE-IeY"/>
+                        <constraint firstAttribute="trailing" secondItem="dxG-gm-XOC" secondAttribute="trailing" id="ZES-Ln-kP7"/>
+                        <constraint firstItem="dxG-gm-XOC" firstAttribute="leading" secondItem="es2-TJ-r1b" secondAttribute="leading" id="cEs-fW-3eo"/>
+                        <constraint firstAttribute="bottom" secondItem="dxG-gm-XOC" secondAttribute="bottom" id="l9Y-Vx-ClG"/>
                     </constraints>
                 </view>
             </subviews>

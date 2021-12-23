@@ -12,7 +12,7 @@ class EachRuneView: BaseView {
     @IBOutlet weak var runeImage: UIImageView!
     @IBOutlet weak var imageButton: UIButton!
 
-    private var tagValue: Int = 0
+    var onPress: (() -> ())?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,4 +35,7 @@ class EachRuneView: BaseView {
         runeImage.setImageUrl(with: urlImage)
     }
 
+    @IBAction func onPressRune(_ sender: UIButton) {
+        onPress?()
+    }
 }

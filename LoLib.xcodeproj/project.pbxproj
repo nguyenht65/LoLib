@@ -54,6 +54,7 @@
 		3668388427423AC300B4332B /* RunesDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3668388327423AC300B4332B /* RunesDetailView.xib */; };
 		3668388627423B1800B4332B /* SpellsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3668388527423B1800B4332B /* SpellsDetailView.swift */; };
 		3668388827424C8600B4332B /* SpellsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3668388727424C8600B4332B /* SpellsDetailView.xib */; };
+		366F71B6277503220017CF5F /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F71B5277503220017CF5F /* ScreenSize.swift */; };
 		367611012757564000BD0EBE /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367610FF2757564000BD0EBE /* TipsViewController.swift */; };
 		367611022757564000BD0EBE /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367611002757564000BD0EBE /* TipsViewController.xib */; };
 		3676110D2757668B00BD0EBE /* StyleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676110C2757668B00BD0EBE /* StyleHelper.swift */; };
@@ -152,6 +153,7 @@
 		3668388327423AC300B4332B /* RunesDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunesDetailView.xib; sourceTree = "<group>"; };
 		3668388527423B1800B4332B /* SpellsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsDetailView.swift; sourceTree = "<group>"; };
 		3668388727424C8600B4332B /* SpellsDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellsDetailView.xib; sourceTree = "<group>"; };
+		366F71B5277503220017CF5F /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		367610FF2757564000BD0EBE /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		367611002757564000BD0EBE /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
 		3676110C2757668B00BD0EBE /* StyleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHelper.swift; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				36ACA965275A012000DAAEEA /* StringConstant.swift */,
+				366F71B5277503220017CF5F /* ScreenSize.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -808,6 +811,7 @@
 				36F329C7274DB9DE00DB5CBB /* ChampionsServices.swift in Sources */,
 				36E2E8C72761A17C000F3167 /* RuneTypeView.swift in Sources */,
 				3654D77E271FEA1100BBB9EB /* BaseViewController.swift in Sources */,
+				366F71B6277503220017CF5F /* ScreenSize.swift in Sources */,
 				36664F43273C5B8900355C0D /* RunesViewModel.swift in Sources */,
 				369ECD72273A599C00192332 /* PassiveCell.swift in Sources */,
 				36E6344327391D960055E566 /* StatusView.swift in Sources */,
